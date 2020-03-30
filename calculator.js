@@ -15,15 +15,15 @@ function printOutput(num){
 		document.getElementById("output-val").innerText=getFormattedNumber(num);
 	}	
 }
-function getFormattedNumber(num){
-	if(num=="-"){
+function getFormattedNumber(num){          //Gives number with proper notations
+	if(num=="-"){   //Incase of negative number
 		return "";
 	}
 	var n = Number(num);
 	var value = n.toLocaleString("en");
 	return value;
 }
-function reverseNumberFormat(num){
+function reverseNumberFormat(num){      //
 	return Number(num.replace(/,/g,''));
 }
 
